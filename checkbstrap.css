@@ -1,0 +1,11 @@
+
+.table {
+	width: 50%;
+	height:30%;
+	margin-right:700px;
+	margin-left:290px;
+	font-weight: bold;
+}
+.container tr th {
+	background: #df6020;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Wise.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Fredericka+the+Great" rel="stylesheet">
+    <title>BVRITH-Lib</title>
+    </head>
+   <body>
+    <div class="Img">
+    <h1>Peek-A-Boo</h1></div>
+      <div>  
+    <a class="btn btn-dark btn-space btn-lg" href="libSearch.html" role="button">Library</a></div>
+  <style>
+*{margin:0px; padding:0px; }
+ div.Img {
+  background-image: url(Peekabooklogo.png);
+  border: none;
+  border-radius: 5px;
+  background-color:  hsl(20,75%,50%);
+  background-position: right 780px bottom -19px;
+  background-repeat: no-repeat;
+  
+}
+
+
+  input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #f49b42;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size:16px;
+
+}
+ 
+button {
+    background-color:  hsl(20,75%,50%);
+    color: white;
+    padding: 10px 14px;
+    margin: 8px 26px;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90%;
+  font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+  display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(10,10,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #f49b42;
+    width: 40%; 
+  padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+<button onclick="document.getElementById('modal-wrapper') .style.display='block'" style="width:99px; height:50px; margin-top:0px; 
+margin-left:600px;  border-radius: 5px;">
+Buy/Sell</button>
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="loginServlet" >
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <h4 style="text-align:center">Please sign in</h4>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Example:16wh..." name="uname"  required="yes">
+      <input type="password" placeholder="Enter Password" name="psw"  required="yes">        
+      <button type="submit">Login</button>
+      <input type="checkbox" style="margin:26px 30px;"> Remember me      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  <!--<script language="JavaScript"><!--
+javascript:window.history.forward(-1);
+//--><!--</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
